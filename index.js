@@ -27,9 +27,7 @@ async function handleInput(input) {
   try {
     if (isFirstPrompt) {
       // Read the PDF file
-      let dataBuffer = fs.readFileSync(
-        "/mnt/c/Users/mohan/Downloads/Mohannad_CT-1.pdf",
-      );
+      let dataBuffer = fs.readFileSync("path to pdf file");
 
       // Extract text from the PDF file
       const data = await pdf(dataBuffer);
